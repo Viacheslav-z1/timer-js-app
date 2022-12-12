@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>Секундомір</title>
+</head>
+<body>
+
+  <div class="timer">
+    <h1 class="timer__name">Секундомір</h1>
+    <div class="timer__wrapper">
+      <div class="timer__block">
+        <p id="hours" class="timer__time">
+          00
+        </p>
+        <h2 class="timer__title">
+          Години
+        </h2>
+      </div>
+      <div class="timer__block">
+        <p id="minuts" class="timer__time">
+          00
+        </p>
+        <h2 class="timer__title">
+          Хвилини
+        </h2>
+      </div>
+      <div class="timer__block">
+        <p id="seconds" class="timer__time">
+          00
+        </p>
+        <h2 class="timer__title">
+          Секунди
+        </h2>
+      </div>
+      <div class="timer__block">
+        <p id="miliseconds" class="timer__time">
+          00
+        </p>
+        <h2 class="timer__title">
+          Мілісекунди
+        </h2>
+      </div>
+    </div>
+    <div class="timer__buttons">
+      <button class="timer__reset btn">Скинути</button>
+      <button class="timer__start btn">Старт</button>
+      <button class="timer__pause btn">Пауза</button>
+      <button class="timer__circle btn">Круг</button>
+    </div>
+    <div class="timer__circle">
+      
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
