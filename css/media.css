@@ -13,11 +13,38 @@
   }
 }
 
+@media(max-width: 520px){
+  .timer__input{
+    max-width: 100px;
+  }
+  .timer__name{
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 460px) {
   .timer__wrapper {
-    gap: 25px;
+    gap: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
   }
+  .timer__buttons {
+    margin-top: 20px;
+  }
+  .btn{
+    font-size: 25px;
+  }
+  .timer__buttons{
+    flex-wrap: wrap;
+  }
+}
+
+
+@media(max-width: 340px){
+  .timer__input{
+    max-width: 90px;
+  }
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-    <title>Секундомір</title>
+    <title>Таймер</title>
   </head>
   <body>
     <div class="timer">
-      <h1 class="timer__name">Секундомір</h1>
+      <h1 class="timer__name">Таймер</h1>
       <div class="timer__wrapper">
         <div class="timer__block">
           <p id="hours" class="timer__time">00</p>
@@ -25,20 +25,38 @@
           <p id="seconds" class="timer__time">00</p>
           <h2 class="timer__title">Секунди</h2>
         </div>
-        <div class="timer__block">
-          <p id="miliseconds" class="timer__time">00</p>
-          <h2 class="timer__title">Мілісекунди</h2>
+      </div>
+      <h3 class="timer__title-name">Встановити час :</h3>
+      <div class="timer__inputs">
+        <div class="timer__input-box">
+          <p class="timer__title">Години</p>
+          <input id="hours-input" min="0" value="0" class="timer__input inputs" type="number" />
+        </div>
+        <div class="timer__input-box">
+          <p class="timer__title">Хвилини</p>
+          <input id="minuts-input" min="0" value="0" class="timer__input inputs" type="number" />
+        </div>
+        <div class="timer__input-box">
+          <p class="timer__title">Cекунди</p>
+          <input id="seconds-input" min="0" value="10" class="timer__input inputs" type="number" />
         </div>
       </div>
-      <div class="timer__buttons">
+      <div class="timer__buttons timer__buttons--timer">
         <button class="timer__reset btn">Скинути</button>
         <button class="timer__start btn">Старт</button>
         <button class="timer__pause btn">Пауза</button>
       </div>
-      <div class="link-box">
-        <a href="timer.html" class="link__timer">Таймер ></a>
+    </div>
+    <div class="link-box">
+      <a href="index.html" class="link__timer">Cекундомір ></a>
+    </div>
+
+
+    <div class="done-modal">
+      <div class="done-modal__inner">
+  <h2 class="done-modal__text">Час вичерпано!</h2>
       </div>
     </div>
-    <script src="js/stopwatch.js"></script>
+    <script src="js/timer.js"></script>
   </body>
 </html>
