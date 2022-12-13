@@ -1,1 +1,1 @@
-# timer-js-app
+https://viacheslav-z1.github.io/timer-js-app/
