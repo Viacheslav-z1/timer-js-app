@@ -88,7 +88,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   function resetTimer() {
-    isTimerReset = true;
+    isTimerReset = true; 
     if (isTimerReset) {
       showModal($doneModal);
       setTimeout(() => {
@@ -101,13 +101,13 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     clearInterval(timoutId);
-    allTimeOnSeconds = 0;
     hourInput.value = 0;
     minutsIinput.value = 0;
     secondsInput.value = 0;
     $hours.innerHTML = "00";
     $minuts.innerHTML = "00";
     $seconds.innerHTML = "00";
+    updateInputValue();
   }
 
   function showModal(modal) {
